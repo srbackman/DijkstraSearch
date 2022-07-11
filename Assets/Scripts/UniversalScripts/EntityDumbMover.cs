@@ -42,6 +42,7 @@ public class EntityDumbMover : MonoBehaviour
 
     private void Move(Transform currentTarget)
     {
+        print("move");
         Vector3 velocity;
         Vector3 allDirections;
         allDirections = new Vector3((currentTarget.position.x - transform.position.x), 0f, (currentTarget.position.z - transform.position.z)).normalized;
